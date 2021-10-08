@@ -24,9 +24,9 @@ public class Histogram<T> {
     }
     
     public Map<T,Integer> getHistogram(){
-        Map<Integer,Integer> histogram = new HashMap<Integer,Integer>();
+        Map<T,Integer> histogram = new HashMap<T,Integer>();
         for (T key : data) {
-            histogram.put((Integer) key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
+            histogram.put( key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
         }
         return (Map<T, Integer>) histogram;
     }
