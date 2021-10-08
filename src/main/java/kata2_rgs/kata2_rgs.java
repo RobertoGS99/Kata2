@@ -12,11 +12,8 @@ public class kata2_rgs {
     public static void main(String[] args) {
         
         
-        int[] data;
-        data = new int[15];
-        for (int i = 0; i < 15; i++) {
-            data[i]= i;
-        }
+        Integer[] data ={1,2,3,4,5,5,6,7,8,9,9,10,2,11,2};
+        
         Histogram histo = new Histogram(data);
         Map<Integer,Integer> histogr = histo.getHistogram();        
         
